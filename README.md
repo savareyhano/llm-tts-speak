@@ -16,7 +16,7 @@ docker compose up --profile piper up -d
 npm run start
 ```
 
-For Piper, get the voices from [piper initial release psge on github](https://github.com/rhasspy/piper/releases/tag/v0.0.2), get the `.onnx` and `.onnx.json` files from the zip and put it inside the `models` folder, then put the voice name in the `.env` file, for example:
+For Piper, get the voices from [piper initial release page on github](https://github.com/rhasspy/piper/releases/tag/v0.0.2), get the `.onnx` and `.onnx.json` files from the zip and put it inside the `models` folder, then put the voice name in the `.env` file, for example:
 
 ```
 PIPER_VOICE_NAME=en-us-ryan-high
