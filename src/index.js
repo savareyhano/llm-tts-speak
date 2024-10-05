@@ -14,7 +14,6 @@ const rl = readline.createInterface({
 const run = async (text) => {
   const outputName = `voice-${dayjs().format('YYYY-MM-DD_hh-mm-ss')}`;
 
-  // llm
   const llmResponse = await ollama(text);
 
   let ttsProvider;
@@ -66,9 +65,8 @@ const run = async (text) => {
     await piper(translatedLLMResponse, process.env.PIPER_VOICE_NAME, outputName);
   }
 
-  // print llm output
   console.log(`AI: ${llmResponse}`);
-  // play sound
+
   player.play(`./output/${outputName}.wav`);
 };
 
