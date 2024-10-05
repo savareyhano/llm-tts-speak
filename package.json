@@ -1,0 +1,23 @@
+{
+  "name": "llm-tts-speak",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1",
+    "@langchain/core": "^0.3.7",
+    "@langchain/ollama": "^0.1.0",
+    "dayjs": "^1.11.13",
+    "play-sound": "^1.1.6"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
